@@ -1,12 +1,8 @@
 # Country Query using Flask and SQL
 
-CS178 Project 1
-Blythe Kelly
-Proposed Grade: 100
-In this project, I created a Flask app that functioned as a world information query webpage. The world information originates from the database provided on Blackboard, which I imported into my AWS RDS instance as a SQL database. 
+In this project, I created a Flask app that functioned as a world information query webpage. The world information originates from a SQL database stored in my AWS RDS instance. 
 
-The first three buttons on the webpage are methods to filter and search the database. On the backend, this uses SQL to query the database according to the user input on the HTML form. I utilized a JOIN to combine the country and country_language tables under the condition that the language was the official language. 
-This population query used an HTML form and a template variable to display either population or life expectancy depending on which button the user pushed. 
+The first three buttons on the webpage are methods to filter and search the database. On the backend, this uses SQL to query the database according to the user input on the HTML form. I utilized a JOIN to combine the country and country_language tables under the condition that the language was the official language. This population query used an HTML form and a template variable to display either population or life expectancy depending on which button the user pushed. 
 
 When performing the search above for countries with populations over 80000000, the results are the following:
 
@@ -46,8 +42,3 @@ Popup screen when an action was completed successfully:
 
 Lastly, I displayed an image that was stored in my S3 bucket. In summary, this project included a user interface to search through a SQL database, CRUD compatibility with a DynamoDB database, and AWS compatibility.
 
-Resources used
-I learned about Flask template variables and template if statements from Code Academy: https://www.codecademy.com/learn/learn-flask/modules/flask-templates-and-forms/cheatsheet 
-To create the login form, I read an article from W3 Schools: https://www.w3schools.com/howto/howto_css_login_form.asp 
-
-![image](https://user-images.githubusercontent.com/86129067/230119585-e1b38818-a185-4295-96ff-648b04864fd8.png)
