@@ -1,0 +1,64 @@
+<!--
+Name: Blythe Kelly
+Assignment: Project 1
+Class: CS 178
+Professor: Dr. Urness
+Due: April 3, 2023
+-->
+
+<html>
+  <title>CS178 Project Webpage</title>
+<head>
+<style>
+body {font-family: Arial}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+button {
+  background-color: #000040;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+</style>
+</head>
+<body>
+
+<!--The log in form -->
+<h2>Login Form</h2>
+
+<form method="post">
+
+  <div>
+    <!--The inputs -->
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username">
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password">
+        
+      <!--The submit button-->
+    <button type="submit">Login</button>
+  </div>
+  </div>
+</form>
+<!--The button that brings the user to the create account page -->
+<form action="http://3.237.255.171:8080/create_account_textbox" method="get">
+           <button type="submit">Create Account</button>
+         </form>
+
+</body>
+</html>

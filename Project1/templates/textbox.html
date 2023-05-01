@@ -1,0 +1,51 @@
+<!--
+Name: Blythe Kelly
+Assignment: Project 1
+Class: CS 178
+Professor: Dr. Urness
+Due: April 3, 2023
+-->
+
+<html>
+  <title>CS178 Project Webpage</title>
+<head>
+<style>
+body {font-family: Arial}
+
+input[type=text] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+button {
+  background-color: #000040;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 40%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+</style>
+</head>
+
+</html>
+<h3>
+  <!--The conditional statement to display wording on the query forms -->
+    {% if fieldname=='population' %}
+        Please enter the minimum population:
+    {% else %}
+        Please enter the minimum life expectancy:
+    {% endif %}
+    </h3>
+<form method="POST">
+    <input name="text" type="text"><br>
+    <button type="submit">Submit</button>
+</form>

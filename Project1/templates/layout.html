@@ -1,0 +1,71 @@
+<!--
+Name: Blythe Kelly
+Assignment: Project 1
+Class: CS 178
+Professor: Dr. Urness
+Due: April 3, 2023
+-->
+
+<html>
+    <title>CS178 Project Webpage</title>
+    <head>
+        <style>
+        form {
+            display: inline-block; 
+            
+        }
+        h1{
+            font-family: Helvetica;
+            color: #000040;
+        }
+        p{
+            font-family: Helvetica;
+        }
+        .button {
+          color: white;
+          padding: 15px 25px;
+          text-align: center;
+          display: inline-block;
+          font-size: 15px;
+          cursor: pointer;
+          font-family: Helvetica;
+        }
+        
+        .querybutton {
+          background-color: #000040;
+          color: white;
+          font-family: Helvetica;
+        }
+        
+        .querybutton:hover {
+          background-color: white;
+          color: #000040;
+          font-family: Helvetica;
+        }
+        
+        </style>
+    </head>
+    <body>
+       <center> <H1>World Information Query</H1>
+       <!--The layout of the home page with buttons to other screens -->
+       <div>
+       <form action="http://3.237.255.171:8080/popquerytextbox" method="get">
+           <button class="button querybutton" type="submit">Search by Population</button>
+           </form>
+        <form action="http://3.237.255.171:8080/lifequerytextbox" method="get">
+            <button class="button querybutton" type="submit">Search by Life Expectancy</button>
+            </form>
+        <form action="http://3.237.255.171:8080/namequerytextbox" method="get">
+            <button class="button querybutton" type="submit">Search by Name</button>
+            </form>
+        <form action="http://3.237.255.171:8080/logintextbox" method="get">
+            <button class="button querybutton" type="submit">Log In</button>
+            </form>
+        </div>
+        
+        <p>Click on the buttons above to query world information.</p>
+        
+        <img src="globe.jpg" width="500" height="500"><br>
+        <p>Photo retrieved from https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17_with_white_background.jpg</p></center>
+    </body>
+</html>

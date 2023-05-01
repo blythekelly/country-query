@@ -1,0 +1,75 @@
+<!--
+Name: Blythe Kelly
+Assignment: Project 1
+Class: CS 178
+Professor: Dr. Urness
+Due: April 3, 2023
+-->
+
+<html>
+    <title>CS178 Project Webpage</title>
+    <head>
+        <style>
+        
+        /* Displaying the buttons all on one line*/
+        form {
+            display: inline-block; 
+            
+        }
+        /* Homepage font styles*/
+        h1{
+            font-family: Helvetica;
+        }
+        p{
+            font-family: Helvetica;
+        }
+        
+        /* Style for the homepage buttons*/
+        .button {
+          color: white;
+          padding: 15px 25px;
+          text-align: center;
+          display: inline-block;
+          font-size: 15px;
+          cursor: pointer;
+          font-family: Helvetica;
+        }
+        
+        .querybutton {
+          background-color: #000040;
+          color: white;
+          font-family: Helvetica;
+        }
+        
+        .querybutton:hover {
+          background-color: white;
+          color: #000040;
+          font-family: Helvetica;
+        }
+        
+        </style>
+    </head>
+    <body>
+       <center> <H1>World Information Admin</H1>
+       <p>Click on the buttons above to update world information.</p><br>
+       <div>
+       <form action="http://3.237.255.171:8080/readcountries" method="get">
+           <button class="button querybutton" type="submit">View All Country Information</button>
+           </form><br>
+            </form><br>
+        <form action="http://3.237.255.171:8080/updateaccounttextbox">
+            <button class="button querybutton" type="submit">Update Password</button>
+            </form><br>
+        <form action="http://3.237.255.171:8080/deleteaccounttextbox">
+            <button class="button querybutton" type="submit">Delete Account</button>
+            </form><br>
+        <form action="http://3.237.255.171:8080/readaccounts">
+            <button class="button querybutton" type="submit">Read All Account Information</button>
+            </form><br>
+        <form action="http://bakdrakecs178spring2023.s3-website-us-east-1.amazonaws.com/">
+            <button class="button querybutton" type="submit">Log Out</button>
+            </form><br>
+        </div>
+        
+    </body>
+</html>
